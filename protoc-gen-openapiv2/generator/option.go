@@ -36,3 +36,9 @@ func DisableDefaultErrors(b bool) Option {
 		gen.reg.SetDisableDefaultErrors(b)
 	}
 }
+
+func AllowDeleteBody(b bool) Option {
+	return func(gen *Generator) {
+		gen.reg.SetAllowDeleteBody(b)
+	}
+}
